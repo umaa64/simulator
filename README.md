@@ -1,8 +1,15 @@
 # simulator
 
-->simulator is an ionic application based on angularjs html and jquery.
+-> simulator is an ionic application based on angularjs html and jquery can run on browser and android mobiles.
 ->Database: pouchdb,couchDB,couchbase to store data
 -> It is using pouchdb plugin to connect to the database couchdb database.
-we are configuring the pouchDB plugin in app.js file and we are accessing the remote database from the app.js 
+we are configuring the pouchDB plugin in app.js file and we can  access the remote database from the app.js 
 
--> from the couchDB, we are replicating the data
+
+ if(ionic.Platform.isAndroid()) {
+        $pouchDB.sync("http://52.67.20.14:5984/sensornew");
+    } else {
+        $pouchDB.sync("http://52.67.20.14:5984/sensornew");
+    }
+    
+
