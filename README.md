@@ -1,7 +1,8 @@
 # simulator
 
 -> simulator is an ionic application based on angularjs html and jquery can run on browser and android mobiles.
- able to add individual sensors name,devices,type,value and last modified date to the list. and able store in the database.
+->able to add new sensor device to the list.
+-> able to edit individual sensors name,devices,type,value and last modified date to the list. and able store in the database.
 ->Database: pouchdb,couchDB,couchbase to store data
 -> It is using pouchdb plugin to connect to the database couchdb database.
 Able to configure the pouchDB plugin in app.js file and we can  access the remote database from the app.js like this.
